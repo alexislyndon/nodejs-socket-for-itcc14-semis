@@ -27,5 +27,5 @@ app.post("/", (req, res) => {
 });
 
 app.listen(port, () => {
-  console.log(`Listening on socket http://localhost:${port}`);
+  console.log(`Listening on socket http://localhost:${port}\n Open a browser on http://localhost:${port} and type your message into the textbox and hit send.`);
 });
