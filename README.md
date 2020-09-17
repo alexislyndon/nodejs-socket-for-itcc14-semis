@@ -11,6 +11,6 @@ npm install
 npm run server
 
 # Server runs on http://localhost:9999.
-# Open a browser on http://localhost:9999 and type your message into the textbox. 
-# An HTML will be returned containing the string, # of characters in it and # of words.
 ```
+Open a browser on http://localhost:9999 and type your message into the textbox. 
+An HTML will be returned containing the string, # of characters in it and # of words.
