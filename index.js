@@ -15,8 +15,14 @@ app.post("/", (req, res) => {
   var msg = req.body.msg;
   res.send(
     `<form action="/" method="post"><label for="msg">Message: </label><input type="text" name="msg" id=""><input type="submit" value="Send"><br><br>${
-      "Message: " + msg + "<br> length:  " + msg.length
-    }</form>`
+      "Message: " +
+      msg +
+      "<br> length:  " +
+      msg.length +
+      "<br > words: " +
+      msg.split(" ").length
+    }
+    </form>`
   );
 });
 
