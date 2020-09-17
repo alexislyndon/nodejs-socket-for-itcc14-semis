@@ -20,7 +20,7 @@ app.post("/", (req, res) => {
       "<br> length:  " +
       msg.length +
       "<br > words: " +
-      msg.split(" ").length
+      msg.trim().split(/\s+/).length
     }
     </form>`
   );
