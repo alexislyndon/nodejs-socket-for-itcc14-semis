@@ -4,10 +4,10 @@ A socket server application that listens on port 9999. Takes a string and return
 ## Quick Start
 
 ``` bash
-# Install dependencies for server
+# Install dependencies
 npm install
 
-# Run the Express server only
+# Run the Express server
 npm run server
 
 # Server runs on http://localhost:9999.
