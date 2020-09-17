@@ -1,16 +1,15 @@
-const express = require("express");
-const app = express();
-app.use(express.json());
+const express = require("express"),
+  app = express(),
+  bodyParser = require("body-parser");
+
+app.use(bodyParser.json());
+app.use(bodyParser.urlencoded({ extended: true }));
+
 const port = 9999;
 
 app.get("/", (req, res) => {
   res.sendfile("index.html");
 });
-
-// app.post("/msg", (req, res) => {
-//     var msg = req.body.msg
-//     res.send(msg + "<br> length: "+  msg.length)
-// });
 
 app.post("/", (req, res) => {
   var msg = req.body.msg;
